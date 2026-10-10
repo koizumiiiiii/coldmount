@@ -64,3 +64,6 @@ key.properties
 # Secrets
 .env
 *.env
+
+# Local Firestore backups (contain real user data - never commit)
+firestore_backup_*.json
