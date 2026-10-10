@@ -62,7 +62,3 @@ lib/
 - No passwords, private keys, or personal emails are committed in source.
 - Do not commit `android/local.properties`, `*.pdf`, `*.jks` / `*.keystore`, or `.env` files (covered by `.gitignore`).
 - Before going public: restrict Firebase API keys in Google Cloud Console (Android package + SHA-1) and lock down Firestore Security Rules.
-
-## Screenshots
-
-_TODO: add screenshots here._
