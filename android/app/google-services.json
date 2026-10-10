@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "676872260226",
+    "project_id": "coldmount",
+    "storage_bucket": "coldmount.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676872260226:android:cc78b2ca670bb61170429b",
+        "android_client_info": {
+          "package_name": "com.example.coldmount"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAnYIfFmQhXQnkhwfO4d1SFEmJsTK8knI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
