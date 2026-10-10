@@ -11,7 +11,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 
-const adminEmail = 'mendozajames992@gmail.com';
+// Admin credentials come from --dart-define (never committed).
+// Run with: --dart-define=ADMIN_EMAIL=... --dart-define=ADMIN_PASS=...
+const adminEmail = String.fromEnvironment('ADMIN_EMAIL');
 const adminPass = String.fromEnvironment('ADMIN_PASS');
 const shotName = 'Shot Tenant';
 const shotEmail = 'shot.tenant@coldmount.ph';
@@ -40,6 +42,7 @@ Future<void> tapTab(WidgetTester tester, String label) async {
 
 Future<void> main() async {
   final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
+  assert(adminEmail.isNotEmpty, 'Pass --dart-define=ADMIN_EMAIL=...');
   assert(adminPass.isNotEmpty, 'Pass --dart-define=ADMIN_PASS=...');
 
   testWidgets('coldmount chapter-6 screenshots', (tester) async {
